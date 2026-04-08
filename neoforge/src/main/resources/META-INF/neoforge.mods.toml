@@ -1,0 +1,37 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "loading_protection"
+version = "${version}"
+displayName = "Loading Protection"
+authors = "OpenAI"
+description = '''
+Protect players from join and spawn damage while the world finishes loading.
+'''
+logoFile = "icon.png"
+
+[[dependencies.loading_protection]]
+modId = "neoforge"
+type = "required"
+versionRange = "[26.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.loading_protection]]
+modId = "minecraft"
+type = "required"
+versionRange = "[26.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+
+[[dependencies.loading_protection]]
+modId = "yet_another_config_lib_v3"
+mandatory = true
+type = "optional"
+versionRange = "[3.9,)"
+ordering = "NONE"
+side = "CLIENT"

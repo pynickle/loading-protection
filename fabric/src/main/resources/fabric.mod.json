@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "loading_protection",
+  "version": "${version}",
+  "name": "Loading Protection",
+  "description": "Protect players from join and spawn damage while the world finishes loading.",
+  "authors": [
+    "OpenAI"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "icon": "icon.png",
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.loadingprotection.fabric.LoadingProtectionFabric"
+    ],
+    "client": [
+      "com.loadingprotection.fabric.client.LoadingProtectionFabricClient"
+    ],
+    "modmenu": [
+      "com.loadingprotection.fabric.client.ModMenuIntegration"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18",
+    "minecraft": "~26.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "yet_another_config_lib_v3": ">=3.8",
+    "modmenu": "*"
+  }
+}
