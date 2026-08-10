@@ -24,7 +24,7 @@ dependencies {
 
     api "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
 
-    implementation "dev.isxander:yet-another-config-lib:${rootProject.yacl_version}+26.1-fabric"
+    implementation "dev.isxander:yet-another-config-lib:${rootProject.yacl_version}+26.2-fabric"
     implementation "com.terraformersmc:modmenu:${rootProject.modmenu_version}"
 
     common(project(path: ":common")) { transitive false }

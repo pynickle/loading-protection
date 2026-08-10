@@ -16,15 +16,13 @@ public final class MissingYaclScreen extends Screen {
     @Override
     protected void init() {
         super.init();
-        addRenderableWidget(Button.builder(CommonComponents.GUI_BACK, button -> minecraft.setScreen(parent))
+        addRenderableWidget(Button.builder(CommonComponents.GUI_BACK, button -> minecraft.gui.setScreen(parent))
                 .bounds(this.width / 2 - 75, this.height - 28, 150, 20)
                 .build());
     }
 
     @Override
     public void onClose() {
-        if (minecraft != null) {
-            minecraft.setScreen(parent);
-        }
+        minecraft.gui.setScreen(parent);
     }
 }

@@ -145,7 +145,7 @@ public final class LoadingProtectionManager {
     }
 
     private static void clearMobTargets(ServerPlayer player, Entity protectedMount) {
-        ServerLevel level = (ServerLevel) player.level();
+        ServerLevel level = player.level();
         for (Mob mob : level.getEntitiesOfClass(Mob.class, player.getBoundingBox().inflate(TARGET_CLEAR_RADIUS))) {
             LivingEntity target = mob.getTarget();
             if (target == player || (protectedMount instanceof LivingEntity livingMount && target == livingMount)) {
